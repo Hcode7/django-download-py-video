@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    input[type=text] {
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        border-radius: 0 0 6px;
+    }
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    </style>
+
+    <h1>Youtube Download Videos</h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="link">URL:</label>
+        <input type="text" name="link" id="link">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
